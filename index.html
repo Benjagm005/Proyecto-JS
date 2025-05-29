@@ -3,96 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Notas Asignatura Front-End</title>
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 30px 10px;
-    }
-
-    .main-container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #average{
-      font-weight: bold;
-      border: 2px solid #0c0c0c;
-      padding: 10px 20px;
-      margin-bottom: 30px;
-      background-color: #eaf3ff;
-    }
-
-    form{
-      background-color: white;
-      padding: 20px;
-      border: 2px solid #000000;
-      border-radius: 10px;
-      width: 300px;
-      margin-bottom: 30px;
-    }
-
-    form div{
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input{
-      width: 100%;
-      padding: 8px;
-      border: 2px solid #000000;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    button{
-      background-color: #000000;
-      color: white;
-      padding: 10px;
-      width: 100%;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    table{
-      border-collapse: collapse;
-      width: 80%;
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-
-    th,td{
-      border: 2px solid #000000;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="main-container">
     <h2>Notas Asignatura Front-End</h2>
-    <div id="average">Promedio General del Curso : N/A</div>
-    <form id="studentForm">
+    <div id="average">Promedio General del Curso: N/A</div>
+    <div id="totalStudents">Total de estudiantes: N/A</div>
+    <div id="examen">Estudiantes que deben rendir examen: N/A</div>
+    <div id="eximidos">Estudiantes eximidos: N/A</div>
+    <form id="studentForm" novalidate>
       <div>
         <label for="name">Nombre:</label>
         <input type="text" id="name" required />
+        <span class="error" id="errorName"></span>
       </div>
       <div>
         <label for="lastname">Apellido:</label>
         <input type="text" id="lastname" required />
+        <span class="error" id="errorLastName"></span>
       </div>
       <div>
         <label for="grade">Nota:</label>
         <input type="number" id="grade" step="0.1" min="1" max="7" required />
+        <span class="error" id="errorGrade"></span>
       </div>
       <button type="submit">Guardar</button>
     </form>
@@ -102,10 +37,10 @@
           <th>Nombre</th>
           <th>Apellido</th>
           <th>Nota</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
-        <!-- contenido dinámico -->
       </tbody>
     </table>
   </div>

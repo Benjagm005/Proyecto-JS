@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 30px 10px;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #average{
+    font-weight: bold;
+    border: 2px solid #0c0c0c;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #eaf3ff;
+  }
+
+  #totalStudents{
+    font-weight: bold;
+    border: 2px solid #0c0c0c;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #eaf3ff;
+  }
+
+  #examen{
+    font-weight: bold;
+    border: 2px solid #0c0c0c;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #eaf3ff;
+  }
+
+  #eximidos{
+    font-weight: bold;
+    border: 2px solid #0c0c0c;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #eaf3ff;
+  }
+
+
+
+  form{
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  form div{
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input{
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+
+  th,td{
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+  }
